@@ -277,17 +277,36 @@ class vNIC(vHardwareComponent):
         """Return the packet queue of this NIC."""
         return self._packet_queue
 
-    @property
-    def bandwidth_usage(self, duration: int | float | None = None):
-        """Return the bandwidth usage of this NIC."""
-        return sum([port.usage() for port in self.ports])
+    def egress_usage(self, duration: int | float | None = None):
+        """Return the egress bandwidth usage of this NIC."""
+        return sum([port.usage(duration) for port in self.ports])
 
-    @property
-    def usage(self):
-        """Return the bandwidth usage of this NIC."""
-        return sum([port.usage() for port in self.ports])
+    def egress_utilization(self, duration: int | float | None = None):
+        """Return the egress bandwidth utilization of this NIC."""
+        return sum([port.utilization(duration) for port in self.ports]) / len(
+            self.ports
+        )
 
-    @property
-    def utilization(self):
-        """Return the bandwidth utilization of this NIC."""
-        return sum([port.utilization() for port in self.ports]) / len(self.ports)
+    def ingress_usage(self, duration: int | float | None = None):
+        """Return the ingress bandwidth usage of this NIC."""
+        connected_nodes = [
+            port.endpoint for port in self.ports
+        ]
+        ingress_usage = 0
+        for node in connected_nodes:
+            for port in node.NIC.ports:
+                if port.endpoint is self.host:
+                    ingress_usage += port.usage(duration)
+        return ingress_usage
+    
+    def ingress_utilization(self, duration: int | float | None = None):
+        """Return the ingress bandwidth utilization of this NIC."""
+        connected_nodes = [
+            port.endpoint for port in self.ports
+        ]
+        ingress_utilization = 0
+        for node in connected_nodes:
+            for port in node.NIC.ports:
+                if port.endpoint is self.host:
+                    ingress_utilization += port.utilization(duration)
+        return ingress_utilization / len(connected_nodes)

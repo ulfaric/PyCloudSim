@@ -138,6 +138,10 @@ Finally, we start the simulation:
     simulation.simulate(1.5)
 
 # Change log
+
+## 10.01.2024
+1. Implemented Dataframe monitors for container and hosts. These monitors collect the telemetries as pandas dataframe.
+
 ## 12.12.2023
 1. Updated with newest version of Akatosh to speed up the simulation.
 2. Implemeted simulated user and it association with simulated gateway.

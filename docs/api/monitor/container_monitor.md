@@ -1,1 +1,2 @@
 :::PyCloudSim.monitor.container_monitor.LoggingContainerMonitor
+:::PyCloudSim.monitor.container_monitor.DataframeContainerMonitor

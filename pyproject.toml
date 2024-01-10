@@ -1,6 +1,6 @@
 [project]
 name = "PyCloudSim"
-version = "1.0.4"
+version = "1.0.6"
 authors = [
   { name="Yifei Ren", email="ryf0510@live.com" },
 ]
@@ -20,8 +20,8 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://ulfaric.github.io/PyCloudSim-dev/"
-"Bug Tracker" = "https://ulfaric.github.io/PyCloudSim-dev/issues"
+"Homepage" = "https://ulfaric.github.io/PyCloudSim/"
+"Bug Tracker" = "https://ulfaric.github.io/PyCloudSim/issues"
 
 [tool.setuptools]
 packages = ["PyCloudSim", "PyCloudSim.entity", "PyCloudSim.monitor", "PyCloudSim.scheduler"]

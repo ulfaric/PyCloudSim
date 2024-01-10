@@ -5,12 +5,12 @@ from Akatosh import instant_event
 
 from PyCloudSim import simulation
 from PyCloudSim.entity import vAPICall, vDefaultMicroservice, vHost, vSwitch, vGateway, vUser
-from PyCloudSim.monitor.container_monitor import LoggingContainerMonitor
+from PyCloudSim.monitor import host_monitor
+from PyCloudSim.monitor.container_monitor import DataframeContainerMonitor, LoggingContainerMonitor
+from PyCloudSim.monitor.host_monitor import DataframeHostMonitor, LoggingHostMonitor
 from PyCloudSim.scheduler import DefaultContainerScheduler
 
 DefaultContainerScheduler()
-
-LoggingContainerMonitor(label="Container Monitor", sample_period=0.01)
 
 core_switch = vSwitch(
     ipc=1,
@@ -40,7 +40,7 @@ for i in range(5):
         num_cores=4,
         cpu_tdps=150,
         cpu_mode=2,
-        ram=2,
+        ram=8,
         rom=16,
         label=str(i),
         create_at=0,
@@ -114,10 +114,14 @@ def test():
         precursor=test,
     )
 
-@instant_event(at=0.12)
-def test2():
-    ms_1.containers[0].fail(0.12)
-
+# @instant_event(at=0.12)
+# def test2():
+#     ms_1.containers[0].fail(0.12)
+LoggingContainerMonitor(label="Container Monitor", sample_period=0.01)
+LoggingHostMonitor(label="Host Monitor", sample_period=0.01)
+monitor = DataframeContainerMonitor(label="Dataframe Container Monitor", sample_period=0.01)
+monitor2 = DataframeHostMonitor(label="Dataframe Host Monitor", sample_period=0.01)
 simulation.debug(False)
 simulation.simulate(1.5)
-simulation.network.plot("./output/topology.png")
+monitor.dataframe.to_csv("test.csv")
+monitor2.dataframe.to_csv("test2.csv")
