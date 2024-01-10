@@ -1,0 +1,27 @@
+[project]
+name = "PyCloudSim"
+version = "1.0.4"
+authors = [
+  { name="Yifei Ren", email="ryf0510@live.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "bitmath",
+    "networkx",
+    "Akatosh",
+]
+
+[project.urls]
+"Homepage" = "https://ulfaric.github.io/PyCloudSim-dev/"
+"Bug Tracker" = "https://ulfaric.github.io/PyCloudSim-dev/issues"
+
+[tool.setuptools]
+packages = ["PyCloudSim", "PyCloudSim.entity", "PyCloudSim.monitor", "PyCloudSim.scheduler"]

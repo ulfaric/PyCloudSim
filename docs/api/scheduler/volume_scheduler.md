@@ -1,0 +1,3 @@
+The class "vVolume" is implemented to resemble a volume that can be attached to a container in Docker or Kubernetes which consumes the ROM from "vHost". A "vContainer" could be attached with multiple "vVolume" and those  "vVolume" could be allocated on different "vHost" rather than the "vHost" where the "vContainer" is hosted. The "vVolume" must be allocated first before a "vContainer" is scheduled. If any "vVolume" is failed to be allocated onto "vHost", the schedule of its associated "vContainer" will be on hold.
+
+:::PyCloudSim.scheduler.volume_scheduler

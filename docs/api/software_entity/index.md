@@ -1,0 +1,1 @@
+The abstract class "VirtualEntity" extends the "Entity" class and introduces additional statuses that are specific to virtual entities within the simulation context. These new statuses include "initiated," "scheduled," "failed," and "completed." These statuses are designed to capture different stages or outcomes relevant to virtual entities during the simulation process.

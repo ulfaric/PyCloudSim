@@ -1,0 +1,79 @@
+site_name: PyCloudSim Docs
+
+nav:
+  - Overview: index.md
+  - Tutorials: tutorials.md
+  - API Reference:
+      - Simulated Entity:
+          - Hardware Component:
+              - api/hardware_component/index.md
+              - vCPUCore: api/hardware_component/v_cpu_core.md
+              - vCPU: api/hardware_component/v_cpu.md
+              - vNIC: api/hardware_component/v_nic.md
+          - Hardware Entity:
+              - api/hardware_entity/index.md
+              - vHost: api/hardware_entity/v_host.md
+              - vGateway: api/hardware_entity/v_gateway.md
+              - vRouter and vSwitch:
+                  - api/hardware_entity/switch_router/index.md
+                  - vRouter: api/hardware_entity/switch_router/v_router.md
+                  - vSwitch: api/hardware_entity/switch_router/v_switch.md
+          - Software Entity:
+              - api/software_entity/index.md
+              - vVolume: api/software_entity/v_volume.md
+              - vContainer: api/software_entity/v_container.md
+              - vMicroservice: api/software_entity/v_microservice.md
+              - vProcess, vPacket and vAPICall:
+                  - api/software_entity/process_packet_apicall/index.md
+                  - vProcess: api/software_entity/process_packet_apicall/v_process.md
+                  - vPacket: api/software_entity/process_packet_apicall/v_packet.md
+                  - vAPICall: api/software_entity/process_packet_apicall/vapicall.md
+              - vUser: api/software_entity/v_user.md
+      - Scheduler:
+          - Container Scheduler: api/scheduler/container_scheduler.md
+          - Volume Scheduler: api/scheduler/volume_scheduler.md
+      - Monitor:
+          - Monitor: api/monitor/monitor.md
+          - Host Monitor: api/monitor/host_monitor.md
+          - Container Monitor: api/monitor/container_monitor.md
+
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  name: "material"
+  highlightjs: true
+  hljs_languages: python
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.indexes
+    - navigation.tracking
+
+plugins:
+  - search
+  - mkdocstrings
+
+markdown_extensions:
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
