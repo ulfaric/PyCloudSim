@@ -612,15 +612,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#PyCloudSim.entity.v_nic.vNIC.bandwidth_usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      bandwidth_usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#PyCloudSim.entity.v_nic.vNIC.host" class="md-nav__link">
     <span class="md-ellipsis">
       host
@@ -648,24 +639,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#PyCloudSim.entity.v_nic.vNIC.usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.entity.v_nic.vNIC.utilization" class="md-nav__link">
-    <span class="md-ellipsis">
-      utilization
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#PyCloudSim.entity.v_nic.vNIC.__init__" class="md-nav__link">
     <span class="md-ellipsis">
       __init__()
@@ -678,6 +651,42 @@
   <a href="#PyCloudSim.entity.v_nic.vNIC.add_port" class="md-nav__link">
     <span class="md-ellipsis">
       add_port()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.egress_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      egress_usage()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.egress_utilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      egress_utilization()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.ingress_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      ingress_usage()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.ingress_utilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ingress_utilization()
     </span>
   </a>
   
@@ -1492,15 +1501,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#PyCloudSim.entity.v_nic.vNIC.bandwidth_usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      bandwidth_usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#PyCloudSim.entity.v_nic.vNIC.host" class="md-nav__link">
     <span class="md-ellipsis">
       host
@@ -1528,24 +1528,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#PyCloudSim.entity.v_nic.vNIC.usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      usage
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.entity.v_nic.vNIC.utilization" class="md-nav__link">
-    <span class="md-ellipsis">
-      utilization
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#PyCloudSim.entity.v_nic.vNIC.__init__" class="md-nav__link">
     <span class="md-ellipsis">
       __init__()
@@ -1558,6 +1540,42 @@
   <a href="#PyCloudSim.entity.v_nic.vNIC.add_port" class="md-nav__link">
     <span class="md-ellipsis">
       add_port()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.egress_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      egress_usage()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.egress_utilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      egress_utilization()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.ingress_usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      ingress_usage()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#PyCloudSim.entity.v_nic.vNIC.ingress_utilization" class="md-nav__link">
+    <span class="md-ellipsis">
+      ingress_utilization()
     </span>
   </a>
   
@@ -1783,7 +1801,26 @@
 <span class="normal">290</span>
 <span class="normal">291</span>
 <span class="normal">292</span>
-<span class="normal">293</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">vNIC</span><span class="p">(</span><span class="n">vHardwareComponent</span><span class="p">):</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">vNIC</span><span class="p">(</span><span class="n">vHardwareComponent</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">host</span><span class="p">:</span> <span class="n">vHardwareEntity</span> <span class="o">|</span> <span class="n">vGateway</span><span class="p">,</span>
@@ -1931,20 +1968,39 @@
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the packet queue of this NIC.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_packet_queue</span>
 
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">bandwidth_usage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the bandwidth usage of this NIC.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">usage</span><span class="p">()</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span>
+    <span class="k">def</span> <span class="nf">egress_usage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the egress bandwidth usage of this NIC.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">usage</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span>
 
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">usage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the bandwidth usage of this NIC.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">usage</span><span class="p">()</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span>
+    <span class="k">def</span> <span class="nf">egress_utilization</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the egress bandwidth utilization of this NIC.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">utilization</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ports</span>
+        <span class="p">)</span>
 
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">utilization</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the bandwidth utilization of this NIC.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">utilization</span><span class="p">()</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">ingress_usage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the ingress bandwidth usage of this NIC.&quot;&quot;&quot;</span>
+        <span class="n">connected_nodes</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span>
+        <span class="p">]</span>
+        <span class="n">ingress_usage</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">connected_nodes</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">NIC</span><span class="o">.</span><span class="n">ports</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="ow">is</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">:</span>
+                    <span class="n">ingress_usage</span> <span class="o">+=</span> <span class="n">port</span><span class="o">.</span><span class="n">usage</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ingress_usage</span>
+
+    <span class="k">def</span> <span class="nf">ingress_utilization</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the ingress bandwidth utilization of this NIC.&quot;&quot;&quot;</span>
+        <span class="n">connected_nodes</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span>
+        <span class="p">]</span>
+        <span class="n">ingress_utilization</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">connected_nodes</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">NIC</span><span class="o">.</span><span class="n">ports</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="ow">is</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">:</span>
+                    <span class="n">ingress_utilization</span> <span class="o">+=</span> <span class="n">port</span><span class="o">.</span><span class="n">utilization</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ingress_utilization</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">connected_nodes</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
 
@@ -1957,28 +2013,6 @@
 
 
 
-
-<div class="doc doc-object doc-attribute">
-
-
-
-
-<h2 id="PyCloudSim.entity.v_nic.vNIC.bandwidth_usage" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">bandwidth_usage</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return the bandwidth usage of this NIC.</p>
-  </div>
-
-</div>
 
 <div class="doc doc-object doc-attribute">
 
@@ -2042,50 +2076,6 @@
   <div class="doc doc-contents ">
   
       <p>Return the ports of this NIC.</p>
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-
-<h2 id="PyCloudSim.entity.v_nic.vNIC.usage" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">usage</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return the bandwidth usage of this NIC.</p>
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-
-<h2 id="PyCloudSim.entity.v_nic.vNIC.utilization" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">utilization</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return the bandwidth utilization of this NIC.</p>
   </div>
 
 </div>
@@ -2214,6 +2204,158 @@
             <span class="n">create_at</span><span class="o">=</span><span class="n">simulation</span><span class="o">.</span><span class="n">now</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">port</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h2 id="PyCloudSim.entity.v_nic.vNIC.egress_usage" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">egress_usage</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the egress bandwidth usage of this NIC.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>PyCloudSim\entity\v_nic.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">egress_usage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the egress bandwidth usage of this NIC.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">usage</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h2 id="PyCloudSim.entity.v_nic.vNIC.egress_utilization" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">egress_utilization</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the egress bandwidth utilization of this NIC.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>PyCloudSim\entity\v_nic.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">egress_utilization</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the egress bandwidth utilization of this NIC.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">port</span><span class="o">.</span><span class="n">utilization</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ports</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h2 id="PyCloudSim.entity.v_nic.vNIC.ingress_usage" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">ingress_usage</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the ingress bandwidth usage of this NIC.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>PyCloudSim\entity\v_nic.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">ingress_usage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the ingress bandwidth usage of this NIC.&quot;&quot;&quot;</span>
+    <span class="n">connected_nodes</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span>
+    <span class="p">]</span>
+    <span class="n">ingress_usage</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">connected_nodes</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">NIC</span><span class="o">.</span><span class="n">ports</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="ow">is</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">:</span>
+                <span class="n">ingress_usage</span> <span class="o">+=</span> <span class="n">port</span><span class="o">.</span><span class="n">usage</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ingress_usage</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+
+<h2 id="PyCloudSim.entity.v_nic.vNIC.ingress_utilization" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">ingress_utilization</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return the ingress bandwidth utilization of this NIC.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>PyCloudSim\entity\v_nic.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">302</span>
+<span class="normal">303</span>
+<span class="normal">304</span>
+<span class="normal">305</span>
+<span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">ingress_utilization</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return the ingress bandwidth utilization of this NIC.&quot;&quot;&quot;</span>
+    <span class="n">connected_nodes</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">ports</span>
+    <span class="p">]</span>
+    <span class="n">ingress_utilization</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">connected_nodes</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">port</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">NIC</span><span class="o">.</span><span class="n">ports</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">port</span><span class="o">.</span><span class="n">endpoint</span> <span class="ow">is</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">:</span>
+                <span class="n">ingress_utilization</span> <span class="o">+=</span> <span class="n">port</span><span class="o">.</span><span class="n">utilization</span><span class="p">(</span><span class="n">duration</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ingress_utilization</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">connected_nodes</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
