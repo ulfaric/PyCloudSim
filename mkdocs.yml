@@ -2,9 +2,11 @@ site_name: PyCloudSim Docs
 
 nav:
   - Overview: index.md
-  - Tutorials: tutorials.md
+  - Tutorials: 
+    - quick_start_guide.md
   - API Reference:
-      - Simulated Entity:
+      - Simulated Entity: 
+          - api/entity.md
           - Hardware Component:
               - api/hardware_component/index.md
               - vCPUCore: api/hardware_component/v_cpu_core.md

@@ -4,18 +4,22 @@
 
 PyCloudSIm can be easily installed via pip with:
 
-    pip install -U PyCloudSim
+```terminal
+pip install -U PyCloudSim
+```
 
 Its dependencies will be automatically installed!
 
 ## Basic Example
 
 Let's sceipt a basic example of simulation that consists five vHost, one switch and two vMicroservice. To start, we firstly import the modules:
+
 ```python
 from PyCloudSim.entity import vDefaultMicroservice, vHost, vSwitch
 ```
 
 Then, we can create a core switch that connects all the simulated hosts:
+
 ```python
 core_switch = vSwitch(
     ipc=1,
@@ -33,6 +37,7 @@ core_switch.power_on(0)
 ```
 
 Remeber you must call the power on function to actualy power on the simulated switch. Then, we create our hosts and link them with the switch:
+
 ```python
 hosts: List[vHost] = []
 for i in range(5):
@@ -54,6 +59,7 @@ for i in range(5):
 ```
 
 Next, we create our microservices:
+
 ```python
 ms_1 = vDefaultMicroservice(
     cpu=100,
@@ -85,6 +91,7 @@ ms_2 = vDefaultMicroservice(
 The "vDefaultMicroservice" is similar to a Kubernetes deployment that the number of container instances schedule up and down based on the utilization threshold. The default configuration is scale up whenever CPU or RAM reach 80% and scale down when they reach 20%.
 
 Next, we create simulated API calls that engages with the microservice:
+
 ```python
 from Akatosh import instant_event
 
@@ -129,6 +136,7 @@ def test():
 In this simple example, we simply have one API call after another. You can create a SFC process with a group of API Calls chaining together. This example can be considered as an SFC with two microservices only.
 
 Next, we set the container scheduler and use a built in container monitor:
+
 ```python
 from PyCloudSim.monitor.container_monitor import LoggingContainerMonitor
 from PyCloudSim.scheduler import DefaultContainerScheduler
@@ -139,23 +147,23 @@ LoggingContainerMonitor(label="Container Monitor", sample_period=0.01)
 ```
 
 Finally, we start the simulation:
+
 ```python
+# dsiable debuging messages
 simulation.debug(False)
+# set simulation to run for 1.5s
 simulation.simulate(1.5)
 ```
-It is very easy to create your own monitor. For example, the LoggingContainerMonitor is implemented by:
+
+It is very easy to create your own monitor:
+
 ```python
 # first, simply extend the base monitor class
-class LoggingContainerMonitor(Monitor):
+class MyContainerMonitor(Monitor):
 
     # secondly, overwrite the on_observation function to what ever you like :)
-    # here we have a logging, but you can create a pandas dataframe, or directly write to a file.
     def on_observation(self, *arg, **kwargs):
-        """Simply log the CPU and RAM usage of the containers.
-        """
-        for container in self.target_containers:
-            if container.initiated:
-                logger.info(
-                    f"{simulation.now}:\t{container} CPU usage: {container.cpu_usage/container.cpu_limit*100:.2f}% , RAM usage: {container.ram_usage/container.ram_limit*100:.2f}%"
-                )
+        # your codes for what happens when monitor observes.
+        pass
+
 ```

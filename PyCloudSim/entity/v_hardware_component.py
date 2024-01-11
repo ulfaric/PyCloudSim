@@ -2,20 +2,15 @@ import warnings
 from typing import Any, Callable, List
 
 from Akatosh import Entity
-from Akatosh.entity import Entity
 
 from PyCloudSim import simulation
 
 from .constants import Constants
 
 
-class vHardwareComponentStateError(Exception):
-    """Raised when the hardware component has a conflicting state."""
-
-    pass
-
-
 class vHardwareComponent(Entity):
+    """Base class for all hardware components."""
+
     def __init__(
         self,
         label: str | None = None,
@@ -31,10 +26,18 @@ class vHardwareComponent(Entity):
         | None = None,
         precursor: Entity | List[Entity] | None = None,
     ) -> None:
-        """Base for all hardware components."""
+        """Create a new hardware component.
+
+        Args:
+            label (str | None, optional): the short description of this new hardware component. Defaults to None.
+            create_at (int | float | Callable[..., int] | Callable[..., float] | None, optional): when is this hardware component is created. Defaults to None.
+            terminate_at (int | float | Callable[..., int] | Callable[..., float] | None, optional): when this hardware component will be terminated. Defaults to None.
+            precursor (Entity | List[Entity] | None, optional): the other entity that this hardware component must not be created until their termination. Defaults to None.
+        """
         super().__init__(label, create_at, terminate_at, precursor)
 
     def on_termination(self):
+        """Power off upon termination."""
         self.power_off(simulation.now)
 
     def power_on(self, at: int | float) -> None:
