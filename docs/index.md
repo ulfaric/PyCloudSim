@@ -1,6 +1,6 @@
 # Welcome to PyCloudSim Docs
 
-PyCloudSim is a simulation toolkit written in python to simulate cloud computing with incorporation of Network Service and Service Funtion Chain. It is based a light-weighted discrete event simulation library Akatosh. PyCloudSim is inspired by CloudSim and CloudSim Plus. However, PyCloudSim simulates the computation fundamentally differently. 
+PyCloudSim is a simulation toolkit written in python to simulate cloud computing with incorporation of Network Service and Service Funtion Chain. It is based a light-weighted discrete event simulation library Akatosh. PyCloudSim is inspired by CloudSim and CloudSim Plus. However, PyCloudSim simulates the computation fundamentally differently.
 
 In CloudSim, a computing work is defined as a Cloudlet with a given length. Then, the Cloudlet is scheduled onto VM. The Cloudlet included two functions defined for CPU usage and RAM usage. Hence, the actual resource usages are just random numbers generated from a predefined function.
 
@@ -8,3 +8,17 @@ In PyCloudSim, a computing work is defined as vProcess which has a instruction l
 
 In addtion, PyCloudSim also simulates the network traffic. That is, vPackets will be created along vProcess. Then, vNIC will queue and transmit them! So you can simulate a API call between vContainers! The API call is simulated as vRequest and only when its associated vProcess is complete and all its associated vPackets have reached the destination, the vRequest is complete! This is impossible within CloudSim or CloudSim Plus.
 
+If you are using PyCloudSim for your research, please use the following refernece.
+
+```bibtex
+@INPROCEEDINGS{10329606,
+  author={Ren, Yifei and Agrawal, Himanshu and Ferdosian, Nasim and Nejabati, Reza},
+  booktitle={2023 IEEE Conference on Network Function Virtualization and Software Defined Networks (NFV-SDN)}, 
+  title={PyCloudSim: Modernized Cloud Computing Simulation Framework with the Incorporation of SFC}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={92-98},
+  doi={10.1109/NFV-SDN59219.2023.10329606}}
+
+```
