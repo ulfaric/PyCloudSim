@@ -406,6 +406,12 @@ class vMicroservice(vSoftwareEntity, ABC):
             for container in self._containers
             if container.initiated
         ) / len(self.containers)
+        
+    @property
+    def num_active_containers(self):
+        """Return the number of container instances."""
+        active_containers = [container for container in self.containers if container.initiated]
+        return len(active_containers)
 
     @property
     def scaling(self):

@@ -12,7 +12,7 @@ if TYPE_CHECKING:
         vContainer,
         vHost,
         vHardwareEntity,
-        vPacket,
+        vMicroservice,
         vSwitch,
         vGateway,
         vVolume,
@@ -25,11 +25,9 @@ import networkx as nx
 from Akatosh import EntityList
 from bitmath import MiB
 from networkx.drawing.layout import spring_layout
-from networkx.drawing.nx_pylab import (
-    draw_networkx_edges,
-    draw_networkx_labels,
-    draw_networkx_nodes,
-)
+from networkx.drawing.nx_pylab import (draw_networkx_edges,
+                                       draw_networkx_labels,
+                                       draw_networkx_nodes)
 
 
 class vNetwork:
@@ -183,6 +181,7 @@ class APICallScheduler(Entity):
 
 class Simulation:
     def __init__(self) -> None:
+        self._microservice: List[vMicroservice] = EntityList(label="Microservices")
         self._containers: List[vContainer] = EntityList(label="Containers")
         self._volumes: List[vVolume] = EntityList(label="Volumes")
         self._api_calls: List[vAPICall] = EntityList(label="APICalls")
@@ -225,6 +224,10 @@ class Simulation:
     @property
     def containers(self):
         return self._containers
+    
+    @property
+    def microservices(self):
+        return self._microservice
 
     @property
     def volumes(self):

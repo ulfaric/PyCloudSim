@@ -186,3 +186,5 @@ pip-selfcheck.json
 *.vsix
 
 output/*
+
+test*

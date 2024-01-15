@@ -8,6 +8,7 @@ from PyCloudSim.entity import vAPICall, vDefaultMicroservice, vHost, vSwitch, vG
 from PyCloudSim.monitor import host_monitor
 from PyCloudSim.monitor.container_monitor import DataframeContainerMonitor, LoggingContainerMonitor
 from PyCloudSim.monitor.host_monitor import DataframeHostMonitor, LoggingHostMonitor
+from PyCloudSim.monitor.microservice_monitor import DataframeMicroserviceMonitor, LoggingMicroserviceMonitor
 from PyCloudSim.scheduler import DefaultContainerScheduler
 
 DefaultContainerScheduler()
@@ -119,9 +120,12 @@ def test():
 #     ms_1.containers[0].fail(0.12)
 LoggingContainerMonitor(label="Container Monitor", sample_period=0.01)
 LoggingHostMonitor(label="Host Monitor", sample_period=0.01)
+LoggingMicroserviceMonitor(label="Microservice Monitor", sample_period=0.01)
 monitor = DataframeContainerMonitor(label="Dataframe Container Monitor", sample_period=0.01)
 monitor2 = DataframeHostMonitor(label="Dataframe Host Monitor", sample_period=0.01)
+monitor3 = DataframeMicroserviceMonitor(targeted_microservices=[ms_1,ms_2],label="Dataframe Microservice Monitor", sample_period=0.01)
 simulation.debug(False)
 simulation.simulate(1.5)
 monitor.dataframe.to_csv("test.csv")
 monitor2.dataframe.to_csv("test2.csv")
+monitor3.dataframe.to_csv("test3.csv")

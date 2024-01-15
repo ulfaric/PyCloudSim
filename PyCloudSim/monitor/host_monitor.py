@@ -35,6 +35,7 @@ class LoggingHostMonitor(Monitor):
             self._target_hosts = target_hosts
 
     def on_observation(self, *arg, **kwargs):
+        """Collect the data from the hosts and log it."""
         for host in self.target_hosts:
             if host.powered_on:
                 logger.info(
@@ -87,6 +88,7 @@ class DataframeHostMonitor(Monitor):
         )
 
     def on_observation(self, *arg, **kwargs):
+        """Collect the data from the hosts and append it to the dataframe."""
         for host in self.target_hosts:
             host_telemetries = pd.DataFrame(
                 {

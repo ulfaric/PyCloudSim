@@ -82,6 +82,7 @@ class DataframeContainerMonitor(Monitor):
         })
 
     def on_observation(self, *arg, **kwargs):
+        """Collect the data from the containers and append it to the dataframe."""
         for container in self.target_containers:
             if container.initiated:
                 container_telemetries = pd.DataFrame(
