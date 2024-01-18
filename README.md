@@ -8,6 +8,21 @@ PyCloudSIm can be easily installed via pip with:
 
 Its dependencies will be automatically installed!
 
+If you are using PyCloudSim for your research, please use the following refernece.
+
+```bibtex
+@INPROCEEDINGS{10329606,
+  author={Ren, Yifei and Agrawal, Himanshu and Ferdosian, Nasim and Nejabati, Reza},
+  booktitle={2023 IEEE Conference on Network Function Virtualization and Software Defined Networks (NFV-SDN)}, 
+  title={PyCloudSim: Modernized Cloud Computing Simulation Framework with the Incorporation of SFC}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={92-98},
+  doi={10.1109/NFV-SDN59219.2023.10329606}}
+
+```
+
 ## Basic Example
 
 Let's sceipt a basic example of simulation that consists five vHost, one switch and two vMicroservice. To start, we firstly import the modules:
