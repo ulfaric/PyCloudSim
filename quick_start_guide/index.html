@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../../scheduler/volume_scheduler/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../host_monitor/">
+        <link rel="next" href="../api/entity/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
-        <title>Monitor - PyCloudSim Docs</title>
+        <title>Quick Start Guide - PyCloudSim Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#PyCloudSim.monitor.Monitor" class="md-skip">
+        <a href="#quick-start-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="PyCloudSim Docs" class="md-header__button md-logo" aria-label="PyCloudSim Docs" data-md-component="logo">
+    <a href=".." title="PyCloudSim Docs" class="md-header__button md-logo" aria-label="PyCloudSim Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Monitor
+              Quick Start Guide
             
           </span>
         </div>
@@ -199,7 +199,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
     
@@ -214,11 +214,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../quick_start_guide/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -234,21 +236,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../entity/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../api/entity/" class="md-tabs__link">
           
   
     
@@ -292,7 +290,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="PyCloudSim Docs" class="md-nav__button md-logo" aria-label="PyCloudSim Docs" data-md-component="logo">
+    <a href=".." title="PyCloudSim Docs" class="md-nav__button md-logo" aria-label="PyCloudSim Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -310,7 +308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -327,8 +325,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -341,12 +341,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -360,7 +360,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tutorials
@@ -371,10 +371,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../quick_start_guide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quick Start Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -383,6 +403,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -399,10 +457,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -419,12 +475,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -438,7 +494,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             API Reference
@@ -502,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../entity/" class="md-nav__link">
+      <a href="../api/entity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -549,7 +605,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../hardware_component/" class="md-nav__link ">
+            <a href="../api/hardware_component/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -582,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_component/v_cpu_core/" class="md-nav__link">
+      <a href="../api/hardware_component/v_cpu_core/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -603,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_component/v_cpu/" class="md-nav__link">
+      <a href="../api/hardware_component/v_cpu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_component/v_nic/" class="md-nav__link">
+      <a href="../api/hardware_component/v_nic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +735,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../hardware_entity/" class="md-nav__link ">
+            <a href="../api/hardware_entity/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -712,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_entity/v_host/" class="md-nav__link">
+      <a href="../api/hardware_entity/v_host/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -733,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_entity/v_gateway/" class="md-nav__link">
+      <a href="../api/hardware_entity/v_gateway/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -778,7 +834,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../hardware_entity/switch_router/" class="md-nav__link ">
+            <a href="../api/hardware_entity/switch_router/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -811,7 +867,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_entity/switch_router/v_router/" class="md-nav__link">
+      <a href="../api/hardware_entity/switch_router/v_router/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware_entity/switch_router/v_switch/" class="md-nav__link">
+      <a href="../api/hardware_entity/switch_router/v_switch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +955,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../software_entity/" class="md-nav__link ">
+            <a href="../api/software_entity/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -932,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/v_volume/" class="md-nav__link">
+      <a href="../api/software_entity/v_volume/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -953,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/v_container/" class="md-nav__link">
+      <a href="../api/software_entity/v_container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -974,7 +1030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/v_microservice/" class="md-nav__link">
+      <a href="../api/software_entity/v_microservice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1021,7 +1077,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../software_entity/process_packet_apicall/" class="md-nav__link ">
+            <a href="../api/software_entity/process_packet_apicall/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1054,7 +1110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/process_packet_apicall/v_process/" class="md-nav__link">
+      <a href="../api/software_entity/process_packet_apicall/v_process/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1075,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/process_packet_apicall/v_packet/" class="md-nav__link">
+      <a href="../api/software_entity/process_packet_apicall/v_packet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1096,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/process_packet_apicall/vapicall/" class="md-nav__link">
+      <a href="../api/software_entity/process_packet_apicall/vapicall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software_entity/v_user/" class="md-nav__link">
+      <a href="../api/software_entity/v_user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1208,7 +1264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scheduler/container_scheduler/" class="md-nav__link">
+      <a href="../api/scheduler/container_scheduler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1229,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scheduler/volume_scheduler/" class="md-nav__link">
+      <a href="../api/scheduler/volume_scheduler/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1255,10 +1311,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1275,12 +1329,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
@@ -1294,7 +1348,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Monitor
@@ -1305,28 +1359,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Monitor
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../api/monitor/monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1335,60 +1371,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitor
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor.sample_period" class="md-nav__link">
-    <span class="md-ellipsis">
-      sample_period
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __init__
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor.on_observation" class="md-nav__link">
-    <span class="md-ellipsis">
-      on_observation
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1401,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../host_monitor/" class="md-nav__link">
+      <a href="../api/monitor/host_monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1422,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../container_monitor/" class="md-nav__link">
+      <a href="../api/monitor/container_monitor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1468,6 +1450,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1476,36 +1460,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitor
+      Installation
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor.sample_period" class="md-nav__link">
+  <a href="#basic-example" class="md-nav__link">
     <span class="md-ellipsis">
-      sample_period
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __init__
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#PyCloudSim.monitor.Monitor.on_observation" class="md-nav__link">
-    <span class="md-ellipsis">
-      on_observation
+      Basic Example
     </span>
   </a>
   
@@ -1526,285 +1492,143 @@
                   
 
 
-  <h1>Monitor</h1>
+<h1 id="quick-start-guide">Quick Start Guide</h1>
+<h2 id="installation">Installation</h2>
+<p>PyCloudSIm can be easily installed via pip with:</p>
+<pre><code class="language-terminal">pip install -U PyCloudSim
+</code></pre>
+<p>Its dependencies will be automatically installed!</p>
+<h2 id="basic-example">Basic Example</h2>
+<p>Let's sceipt a basic example of simulation that consists five vHost, one switch and two vMicroservice. To start, we firstly import the modules:</p>
+<pre><code class="language-python">from PyCloudSim.entity import vDefaultMicroservice, vHost, vSwitch
+</code></pre>
+<p>Then, we can create a core switch that connects all the simulated hosts:</p>
+<pre><code class="language-python">core_switch = vSwitch(
+    ipc=1,
+    frequency=5000,
+    num_cores=4,
+    cpu_tdps=150,
+    cpu_mode=1,
+    ram=8,
+    rom=16,
+    subnet=IPv4Network(&quot;192.168.0.0/24&quot;),
+    label=&quot;Core&quot;,
+    create_at=0,
+)
+core_switch.power_on(0)
+</code></pre>
+<p>Remeber you must call the power on function to actualy power on the simulated switch. Then, we create our hosts and link them with the switch:</p>
+<pre><code class="language-python">hosts: List[vHost] = []
+for i in range(5):
+    host = vHost(
+        ipc=1,
+        frequency=5000,
+        num_cores=4,
+        cpu_tdps=150,
+        cpu_mode=2,
+        ram=2,
+        rom=16,
+        label=str(i),
+        create_at=0,
+    )
 
-<div class="doc doc-object doc-class">
+    host.power_on(0)
+    simulation.network.add_link(host, core_switch, 1, 0)
+    hosts.append(host)
+</code></pre>
+<p>Next, we create our microservices:</p>
+<pre><code class="language-python">ms_1 = vDefaultMicroservice(
+    cpu=100,
+    cpu_limit=500,
+    ram=500,
+    ram_limit=1000,
+    label=&quot;test 1&quot;,
+    image_size=100,
+    create_at=0,
+    deamon=True,
+    min_num_instances=2,
+    max_num_instances=4,
+)
 
+ms_2 = vDefaultMicroservice(
+    cpu=100,
+    cpu_limit=500,
+    ram=500,
+    ram_limit=1000,
+    label=&quot;test 2&quot;,
+    image_size=100,
+    create_at=0,
+    deamon=True,
+    min_num_instances=3,
+    max_num_instances=4,
+)
+</code></pre>
+<p>The "vDefaultMicroservice" is similar to a Kubernetes deployment that the number of container instances schedule up and down based on the utilization threshold. The default configuration is scale up whenever CPU or RAM reach 80% and scale down when they reach 20%.</p>
+<p>Next, we create simulated API calls that engages with the microservice:</p>
+<pre><code class="language-python">from Akatosh import instant_event
 
+@instant_event(at=0.11)
+def test():
+    test = vAPICall(
+        src=ms_1,
+        dst=ms_2,
+        src_process_length=10,
+        dst_process_length=10,
+        ack_process_length=10,
+        num_src_packets=10,
+        num_ret_packets=10,
+        num_ack_packets=10,
+        src_packet_size=100,
+        ret_packet_size=100,
+        ack_packet_size=100,
+        priority=1,
+        create_at=0.11,
+        label=&quot;test&quot;,
+    )
 
-<a id="PyCloudSim.monitor.Monitor"></a>
-  <div class="doc doc-contents first">
-          <p class="doc doc-class-bases">
-            Bases: <code><span title="Akatosh.Entity">Entity</span></code>, <code><span title="abc.ABC">ABC</span></code></p>
+    post_test = vAPICall(
+        src=ms_2,
+        dst=ms_1,
+        src_process_length=10,
+        dst_process_length=10,
+        ack_process_length=10,
+        num_src_packets=10,
+        num_ret_packets=10,
+        num_ack_packets=10,
+        src_packet_size=100,
+        ret_packet_size=100,
+        ack_packet_size=100,
+        priority=1,
+        create_at=0.11,
+        label=&quot;Post test&quot;,
+        precursor=test,
+    )
+</code></pre>
+<p>In this simple example, we simply have one API call after another. You can create a SFC process with a group of API Calls chaining together. This example can be considered as an SFC with two microservices only.</p>
+<p>Next, we set the container scheduler and use a built in container monitor:</p>
+<pre><code class="language-python">from PyCloudSim.monitor.container_monitor import LoggingContainerMonitor
+from PyCloudSim.scheduler import DefaultContainerScheduler
 
+DefaultContainerScheduler()
 
-            <details class="quote">
-              <summary>Source code in <code>PyCloudSim\monitor\__init__.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Monitor</span><span class="p">(</span><span class="n">Entity</span><span class="p">,</span> <span class="n">ABC</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-        <span class="bp">self</span><span class="p">,</span>
-        <span class="n">label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-        <span class="n">sample_period</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Base class for all monitors</span>
+LoggingContainerMonitor(label=&quot;Container Monitor&quot;, sample_period=0.01)
+</code></pre>
+<p>Finally, we start the simulation:</p>
+<pre><code class="language-python"># dsiable debuging messages
+simulation.debug(False)
+# set simulation to run for 1.5s
+simulation.simulate(1.5)
+</code></pre>
+<p>It is very easy to create your own monitor:</p>
+<pre><code class="language-python"># first, simply extend the base monitor class
+class MyContainerMonitor(Monitor):
 
-<span class="sd">        Args:</span>
-<span class="sd">            label (str): the short name of the monitor.</span>
-<span class="sd">            sample_period (int | float | Callable[..., int] | Callable[..., float], optional): the sample period. Defaults to 0.1.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">create_at</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    # secondly, overwrite the on_observation function to what ever you like :)
+    def on_observation(self, *arg, **kwargs):
+        # your codes for what happens when monitor observes.
+        pass
 
-        <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">sample_period</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_sample_period</span> <span class="o">=</span> <span class="n">sample_period</span><span class="p">()</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_sample_period</span> <span class="o">=</span> <span class="n">sample_period</span>
-
-    <span class="k">def</span> <span class="nf">on_creation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nd">@self</span><span class="o">.</span><span class="n">continuous_event</span><span class="p">(</span>
-            <span class="n">at</span><span class="o">=</span><span class="n">simulation</span><span class="o">.</span><span class="n">now</span><span class="p">,</span>
-            <span class="n">interval</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_sample_period</span><span class="p">,</span>
-            <span class="n">duration</span><span class="o">=</span><span class="n">inf</span><span class="p">,</span>
-            <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="si">}</span><span class="s2"> Observer&quot;</span><span class="p">,</span>
-        <span class="p">)</span>
-        <span class="k">def</span> <span class="nf">_observe</span><span class="p">():</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">on_observation</span><span class="p">()</span>
-
-    <span class="k">def</span> <span class="nf">on_termination</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">on_termination</span><span class="p">()</span>
-
-    <span class="k">def</span> <span class="nf">on_destruction</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">on_destruction</span><span class="p">()</span>
-
-    <span class="nd">@abstractmethod</span>
-    <span class="k">def</span> <span class="nf">on_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">arg</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;The method to be called at each observation/sample.&quot;&quot;&quot;</span>
-        <span class="k">pass</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">sample_period</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Return the sample period of the monitor.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sample_period</span>
-</code></pre></div></td></tr></table></div>
-            </details>
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h2 id="PyCloudSim.monitor.Monitor.sample_period" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">sample_period</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-property"><code>property</code></small>
-  </span>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Return the sample period of the monitor.</p>
-  </div>
-
-</div>
-
-
-
-
-<div class="doc doc-object doc-function">
-
-
-
-<h2 id="PyCloudSim.monitor.Monitor.__init__" class="doc doc-heading">
-          <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">sample_period</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span></code>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Base class for all monitors</p>
-
-
-
-  <p><strong>Parameters:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Default</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>label</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>the short name of the monitor.</p>
-            </div>
-          </td>
-          <td>
-              <em>required</em>
-          </td>
-        </tr>
-        <tr>
-          <td><code>sample_period</code></td>
-          <td>
-                <code>int | float | <span title="typing.Callable">Callable</span>[..., int] | <span title="typing.Callable">Callable</span>[..., float]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>the sample period. Defaults to 0.1.</p>
-            </div>
-          </td>
-          <td>
-                <code>0.1</code>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-          <details class="quote">
-            <summary>Source code in <code>PyCloudSim\monitor\__init__.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
-    <span class="bp">self</span><span class="p">,</span>
-    <span class="n">label</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-    <span class="n">sample_period</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">|</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Base class for all monitors</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        label (str): the short name of the monitor.</span>
-<span class="sd">        sample_period (int | float | Callable[..., int] | Callable[..., float], optional): the sample period. Defaults to 0.1.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">create_at</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">sample_period</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_period</span> <span class="o">=</span> <span class="n">sample_period</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_sample_period</span> <span class="o">=</span> <span class="n">sample_period</span>
-</code></pre></div></td></tr></table></div>
-          </details>
-  </div>
-
-</div>
-
-
-<div class="doc doc-object doc-function">
-
-
-
-<h2 id="PyCloudSim.monitor.Monitor.on_observation" class="doc doc-heading">
-          <code class="highlight language-python"><span class="n">on_observation</span><span class="p">(</span><span class="o">*</span><span class="n">arg</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
-  </span>
-
-</h2>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>The method to be called at each observation/sample.</p>
-
-          <details class="quote">
-            <summary>Source code in <code>PyCloudSim\monitor\__init__.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
-<span class="k">def</span> <span class="nf">on_observation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">arg</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The method to be called at each observation/sample.&quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</code></pre></div></td></tr></table></div>
-          </details>
-  </div>
-
-</div>
-
-
-
-  </div>
-
-  </div>
-
-
-</div>
+</code></pre>
 
 
 
@@ -1851,10 +1675,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.tracking"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>
