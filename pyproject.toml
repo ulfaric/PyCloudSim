@@ -1,6 +1,6 @@
 [project]
 name = "PyCloudSim"
-version = "1.0.6"
+version = "1.0.7"
 authors = [
   { name="Yifei Ren", email="ryf0510@live.com" },
 ]
@@ -16,7 +16,7 @@ classifiers = [
 dependencies = [
     "bitmath",
     "networkx",
-    "Akatosh",
+    "Akatosh<=2.3.3",
 ]
 
 [project.urls]

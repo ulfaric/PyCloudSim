@@ -1,5 +1,9 @@
 # Quick Start Guide
 
+## !!! Important !!!
+
+PyCloudSim is now using Akatosh 2.3.3 by default. Please install version 1.0.7 of PyCloudSim to use it.
+
 ## Installation
 
 PyCloudSIm can be easily installed via pip with:
